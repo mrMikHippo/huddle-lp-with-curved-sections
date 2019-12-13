@@ -1,0 +1,25 @@
+@use 'base';
+
+header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    flex-basis: 45%;
+  }
+
+  .header-btn {
+    border: 1px solid base.$primary-color;
+    color: base.$primary-color;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    transition: background 0.3s, color 0.3s;
+    min-width: 7.5rem;
+  }
+
+  .header-btn:hover {
+    color: base.$neutral-very-pale-blue;
+    background: base.$primary-color;
+  }
+}

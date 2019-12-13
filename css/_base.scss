@@ -1,0 +1,64 @@
+$primary-color: hsl(322, 100%, 66%);
+$neutral-very-dark-cyan: hsl(192, 100%, 9%);
+$neutral-very-pale-blue: hsl(207, 100%, 98%);
+$faded-white: #888;
+
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+main {
+  padding: 7%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.primary-btn {
+  background: $primary-color;
+  color: $neutral-very-pale-blue;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+  margin: 30px auto 100px;
+  transition: all .5s;
+}
+
+.primary-btn:hover {
+  background: $neutral-very-pale-blue;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+}

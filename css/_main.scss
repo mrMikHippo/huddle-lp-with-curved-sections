@@ -1,0 +1,45 @@
+@use 'base';
+
+.call-to-action-header {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.values {
+  .values_card {
+    padding: 30px 0;
+    width: 200px;
+    margin: 60px auto;
+
+    .values_card__title {
+      // font-size: 4rem;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+
+    .values_card__description {
+      color: base.$faded-white;
+      margin: 0;
+    }
+  }
+
+  .communities {
+    background: url('../images/icon-communities.svg') no-repeat;
+    background-position: 20px 0;
+
+    .values_card__title {
+      font-size: 4rem;
+    }
+  }
+
+  .messages {
+    background: url('../images/icon-messages.svg') no-repeat;
+    background-position: 20px 0;
+
+    .values_card__title {
+      font-size: 3.4rem;
+    }
+  }
+}
