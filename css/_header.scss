@@ -16,10 +16,10 @@ header {
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
     transition: background 0.3s, color 0.3s;
     min-width: 7.5rem;
-  }
 
-  .header-btn:hover {
-    color: base.$neutral-very-pale-blue;
-    background: base.$primary-color;
+    &:hover {
+      color: base.$neutral-very-pale-blue;
+      background: base.$primary-color;
+    }
   }
 }

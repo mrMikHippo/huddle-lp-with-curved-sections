@@ -16,10 +16,10 @@
       font-size: 1rem;
       border: none;
       border-radius: 5px;
-    }
 
-    input:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
 
     .footer-btn {
@@ -30,6 +30,12 @@
       font-weight: 600;
       border-radius: 5px;
       margin-top: 10px;
+      transition: all .3s;
+
+      &:hover {
+        background: base.$neutral-very-pale-blue;
+        color: base.$primary-color;
+      }
     }
   }
 }
@@ -62,11 +68,19 @@
         font-size: 1.7rem;
         color: base.$neutral-very-pale-blue;
         text-decoration: none;
-      }
 
-      a:hover {
-        color: base.$primary-color;
+        &:hover {
+          color: base.$primary-color;
+        }
       }
     }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 58%);
   }
 }

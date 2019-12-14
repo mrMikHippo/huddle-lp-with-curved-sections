@@ -6,6 +6,8 @@ $faded-white: #888;
 $font-heading: 'Poppins', sans-serif;
 $font-body: 'Open Sans', sans-serif;
 
+$breakpoint-desktop:  1440px;
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -78,10 +80,10 @@ footer {
   border-radius: 20px;
   padding: .5rem 1.5rem;
   font-size: 1rem;
-}
 
-.btn:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .primary-btn {
@@ -90,10 +92,10 @@ footer {
   box-shadow: 0 3px 5px rgba(0,0,0,0.4);
   margin: 30px auto 100px;
   transition: all .5s;
-}
 
-.primary-btn:hover {
-  background: $neutral-very-pale-blue;
-  color: $primary-color;
-  border: 1px solid $primary-color;
+  &:hover {
+    background: $neutral-very-pale-blue;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
 }
