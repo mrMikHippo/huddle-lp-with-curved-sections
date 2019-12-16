@@ -2,14 +2,13 @@ $primary-color: hsl(322, 100%, 66%);
 $neutral-very-dark-cyan: hsl(192, 100%, 9%);
 $neutral-very-pale-blue: hsl(207, 100%, 98%);
 $faded-white: #888;
-
 $font-heading: 'Poppins', sans-serif;
 $font-body: 'Open Sans', sans-serif;
+$breakpoint-desktop: 1440px;
 
-$breakpoint-desktop:  1440px;
-
-
-*, *:before, *:after {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -24,7 +23,9 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: $font-heading;
   font-weight: 700;
 }
@@ -54,8 +55,6 @@ main {
   text-align: center;
 }
 
-
-
 footer {
   background-color: $neutral-very-dark-cyan;
   color: $neutral-very-pale-blue;
@@ -67,18 +66,26 @@ footer {
     content: '';
     position: absolute;
     left: 0;
-    top: -52px;
-    height: 52px;
+    top: -53px;
+    height: 53px;
     width: 100%;
-    background: url('../images/bg-footer-top-mobile.svg') no-repeat;
+    background: url("../images/bg-footer-top-mobile.svg") no-repeat;
+
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-top: 280px;
+    &:before {
+      top: -158px;
+      height: 158px;
+      background: url('../images/bg-footer-top-desktop.svg') no-repeat;
+    }
   }
 }
 
 .btn {
   background: none;
   border: 1px solid transparent;
-  border-radius: 20px;
-  padding: .5rem 1.5rem;
+  border-radius: 30px;
   font-size: 1rem;
 
   &:focus {
@@ -89,9 +96,13 @@ footer {
 .primary-btn {
   background: $primary-color;
   color: $neutral-very-pale-blue;
+  font-weight: 600;
   box-shadow: 0 3px 5px rgba(0,0,0,0.4);
-  margin: 30px auto 100px;
-  transition: all .5s;
+  padding: 1rem 2.3rem;
+  margin-top: 30px;
+  min-width: 25%;
+  transition: all 0.5s;
+  // margin: 30px auto 100px;
 
   &:hover {
     background: $neutral-very-pale-blue;
